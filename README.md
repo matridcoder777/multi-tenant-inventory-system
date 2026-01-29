@@ -522,121 +522,15 @@ npm start
 
 ---
 
-## Time Breakdown
-
-### Development Timeline
-
-Total Development Time: **~40-50 hours**
-
-### Phase 1: Foundation (8-10 hours)
-- Project setup (npm, MongoDB, .env)
-- Mongoose schema design
-- Express server with middleware
-- JWT authentication
-- **Output**: Basic login working
-
-### Phase 2: Inventory Management (8-10 hours)
-- Product/Variant CRUD
-- Stock level management
-- Inventory dashboard
-- Supplier relationships
-- **Output**: Full inventory management working
-
-### Phase 3: Order Management (8-10 hours)
-- Order creation and status tracking
-- Fulfillment with stock deduction
-- Concurrency-safe transactions
-- Order history
-- **Output**: Orders with atomic stock updates
-
-### Phase 4: Purchase Orders & UI (8-10 hours)
-- Purchase order module
-- Modern styling (gradient headers, animations)
-- Dashboard analytics
-- Real-time Socket.io integration
-- **Output**: Full feature-rich UI
-
-### Phase 5: Multi-Tenancy & Admin (6-8 hours)
-- Master admin portal
-- Tenant management CRUD
-- User management per tenant
-- Role-based access control
-- **Output**: Complete multi-tenant admin
-
-### Phase 6: Polish & Documentation (2-4 hours)
-- Bug fixes
-- ARCHITECTURE.md
-- README.md
-- Demo credentials setup
-- **Output**: Production-ready with docs
-
-### Breakdown by Task Type
-
-| Task | Hours | Percent |
-|------|-------|---------|
-| Backend Development | 20 | 43% |
-| Frontend Development | 15 | 32% |
-| Database Design | 5 | 11% |
-| Testing & Debugging | 4 | 9% |
-| Documentation | 2 | 5% |
-| **Total** | **46** | **100%** |
-
-### Breakdown by Complexity
-
-| Complexity | Task | Hours |
-|-----------|------|-------|
-| **High** | Pessimistic locking, stock movements, multi-tenancy isolation | 12 |
-| **Medium** | CRUD operations, fulfillment logic, Socket.io integration | 20 |
-| **Low** | UI components, styling, documentation | 14 |
-
-### Key Time Investments
-
-1. **Multi-Tenancy Design** (4h)
-   - Planning row-level isolation
-   - Implementing tenantInjector middleware
-   - Testing data separation
-
-2. **Order Fulfillment** (6h)
-   - Pessimistic locking implementation
-   - Stock deduction logic
-   - Partial fulfillment tracking
-
-3. **User Management** (5h)
-   - Tenant user CRUD
-   - Role-based permissions
-   - Owner-specific restrictions
-
-4. **Admin Portal** (5h)
-   - Tenant creation/management
-   - User management UI
-   - Styling and animations
-
-5. **Real-Time Updates** (4h)
-   - Socket.io setup
-   - Event broadcasting
-   - Client-side listeners
-
-6. **Bug Fixes & Polish** (6h)
-   - Login page improvements
-   - Demo credentials for multiple tenants
-   - Error handling refinement
-
----
 
 ## Contributing
 
-This is a demonstration project. For improvements or feedback:
+This is a demonstration project only. For improvements or feedback:
 
 1. Review [ARCHITECTURE.md](./ARCHITECTURE.md) for design decisions
 2. Check [Known Limitations](#known-limitations) before proposing changes
 3. Test across both demo tenants
 4. Maintain role-based access control security
-
----
-
-## License
-
-Proprietary - This is a demonstration/training project.
 
 ---
 
